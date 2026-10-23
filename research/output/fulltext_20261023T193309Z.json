@@ -1,0 +1,827 @@
+[
+  {
+    "name": "Prothom Alo",
+    "language": "bn",
+    "feed_url": "https://www.prothomalo.com/feed",
+    "robots_readable": true,
+    "checked_at": "2026-10-23T19:33:09.145749+00:00",
+    "samples": [
+      {
+        "title": "সৌদি আরবগামী ১৪১ ফ্লাইট বিঘ্ন, ২২ হাজার যাত্রী ক্ষতিগ্রস্ত",
+        "link": "https://www.prothomalo.com/bangladesh/pnpe4lbhe7",
+        "feed_chars": 1085,
+        "page_status": 200,
+        "page_chars": 1112,
+        "page_method": "jsonld",
+        "ratio": 0.98
+      },
+      {
+        "title": "সেই গুমটিঘর এলাকায় আবার পুলিশের মাদকবিরোধী অভিযান, গ্রেপ্তার ২৮",
+        "link": "https://www.prothomalo.com/bangladesh/crime/r2wzqm9wmu",
+        "feed_chars": 1244,
+        "page_status": 200,
+        "page_chars": 1271,
+        "page_method": "jsonld",
+        "ratio": 0.98
+      },
+      {
+        "title": "‘ইরানে নরক নামিয়েছিলাম,\nআরও কঠোর হতে পারি’",
+        "link": "https://www.prothomalo.com/world/usa/9pnykuuv7g",
+        "feed_chars": 2984,
+        "page_status": 200,
+        "page_chars": 2997,
+        "page_method": "jsonld",
+        "ratio": 1.0
+      }
+    ],
+    "entries": 37,
+    "newest": "2026-10-23T19:14:34+00:00",
+    "age_hours": 0.3,
+    "fresh": true,
+    "median_feed_chars": 1244,
+    "median_ratio": 0.98,
+    "page_fetchable": true,
+    "full_text": true
+  },
+  {
+    "name": "Prothom Alo English",
+    "language": "en",
+    "feed_url": "https://en.prothomalo.com/feed",
+    "robots_readable": true,
+    "checked_at": "2026-10-23T19:33:09.145749+00:00",
+    "samples": [
+      {
+        "title": "Hotel catches fire in Cox’s Bazar; tourists flee to beach",
+        "link": "https://en.prothomalo.com/bangladesh/local-news/1vbdlxs34t",
+        "feed_chars": 2153,
+        "page_status": 200,
+        "page_chars": 1946,
+        "page_method": "jsonld",
+        "ratio": 1.11
+      }
+    ],
+    "entries": 1,
+    "newest": "2026-10-23T15:38:10+00:00",
+    "age_hours": 3.9,
+    "fresh": true,
+    "median_feed_chars": 2153,
+    "median_ratio": 1.11,
+    "page_fetchable": true,
+    "full_text": true
+  },
+  {
+    "name": "Ittefaq",
+    "language": "bn",
+    "feed_url": "https://www.ittefaq.com.bd/feed/",
+    "robots_readable": false,
+    "checked_at": "2026-10-23T19:33:09.145749+00:00",
+    "samples": [
+      {
+        "title": "‘এসব অপরাধীর বিরুদ্ধে আলেম সমাজের বড় একটি অংশকে কখনো সোচ্চার হতে দেখি না’",
+        "link": "https://www.ittefaq.com.bd/816901/%E2%80%98%E0%A6%8F%E0%A6%B8%E0%A6%AC-%E0%A6%85%E0%A6%AA%E0%A6%B0%E0%A6%BE%E0%A6%A7%E0%A7%80%E0%A6%B0-%E0%A6%AC%E0%A6%BF%E0%A6%B0%E0%A7%81%E0%A6%A6%E0%A7%8D%E0%A6%A7%E0%A7%87-%E0%A6%86%E0%A6%B2%E0%A7%87%E0%A6%AE-%E0%A6%B8%E0%A6%AE%E0%A6%BE%E0%A6%9C%E0%A7%87%E0%A6%B0-%E0%A6%AC%E0%A6%A1%E0%A6%BC-%E0%A6%8F%E0%A6%95%E0%A6%9F%E0%A6%BF-%E0%A6%85%E0%A6%82%E0%A6%B6%E0%A6%95%E0%A7%87",
+        "feed_chars": 390,
+        "page_status": 403
+      },
+      {
+        "title": "স্বামীকে বাঁচাতে গিয়ে পেটে খেলেন লাথি, গর্ভের সন্তান হারালেন গৃহবধূ",
+        "link": "https://www.ittefaq.com.bd/816892/%E0%A6%B8%E0%A7%8D%E0%A6%AC%E0%A6%BE%E0%A6%AE%E0%A7%80%E0%A6%95%E0%A7%87-%E0%A6%AC%E0%A6%BE%E0%A6%81%E0%A6%9A%E0%A6%BE%E0%A6%A4%E0%A7%87-%E0%A6%97%E0%A6%BF%E0%A7%9F%E0%A7%87-%E0%A6%AA%E0%A7%87%E0%A6%9F%E0%A7%87-%E0%A6%96%E0%A7%87%E0%A6%B2%E0%A7%87%E0%A6%A8-%E0%A6%B2%E0%A6%BE%E0%A6%A5%E0%A6%BF-%E0%A6%97%E0%A6%B0%E0%A7%8D%E0%A6%AD%E0%A7%87%E0%A6%B0",
+        "feed_chars": 402,
+        "page_status": 403
+      },
+      {
+        "title": "নিজ সন্তানের নিরাপত্তায় কোনো ছাড় নেই, এটাই শেষ কথা: আব্দুল হাই সাইফুল্লাহ",
+        "link": "https://www.ittefaq.com.bd/816896/%E0%A6%A8%E0%A6%BF%E0%A6%9C-%E0%A6%B8%E0%A6%A8%E0%A7%8D%E0%A6%A4%E0%A6%BE%E0%A6%A8%E0%A7%87%E0%A6%B0-%E0%A6%A8%E0%A6%BF%E0%A6%B0%E0%A6%BE%E0%A6%AA%E0%A6%A4%E0%A7%8D%E0%A6%A4%E0%A6%BE%E0%A7%9F-%E0%A6%95%E0%A7%8B%E0%A6%A8%E0%A7%8B-%E0%A6%9B%E0%A6%BE%E0%A7%9C-%E0%A6%A8%E0%A7%87%E0%A6%87-%E0%A6%8F%E0%A6%9F%E0%A6%BE%E0%A6%87-%E0%A6%B6%E0%A7%87%E0%A6%B7",
+        "feed_chars": 405,
+        "page_status": 403
+      }
+    ],
+    "entries": 100,
+    "newest": "2026-10-23T19:27:00+00:00",
+    "age_hours": 0.1,
+    "fresh": true,
+    "median_feed_chars": 402,
+    "median_ratio": null,
+    "page_fetchable": false,
+    "full_text": false
+  },
+  {
+    "name": "Janakantha",
+    "language": "bn",
+    "feed_url": "https://www.dailyjanakantha.com/rss/rss.xml",
+    "robots_readable": true,
+    "checked_at": "2026-10-23T19:33:09.145749+00:00",
+    "samples": [
+      {
+        "title": "কক্সবাজারের হোটেলে আগুন, প্রাণে বাঁচল ৩ শতাধিক পর্যটক",
+        "link": "https://www.dailyjanakantha.com/bangladesh/news/917637",
+        "feed_chars": 6,
+        "page_status": 200,
+        "page_chars": 1747,
+        "page_method": "p-tags",
+        "ratio": 0.0
+      },
+      {
+        "title": "তারেক রহমানকে মাসুদের খোলা চিঠি, তৃণমূলের ত্যাগের মূল্যায়নের দাবি",
+        "link": "https://www.dailyjanakantha.com/politics/news/917636",
+        "feed_chars": 6,
+        "page_status": 200,
+        "page_chars": 2588,
+        "page_method": "p-tags",
+        "ratio": 0.0
+      },
+      {
+        "title": "সৌদিতে নিহত সাহেদের দাফন সম্পন্ন, শোকে স্তব্ধ পরিবার",
+        "link": "https://www.dailyjanakantha.com/bangladesh/news/917635",
+        "feed_chars": 6,
+        "page_status": 200,
+        "page_chars": 1310,
+        "page_method": "p-tags",
+        "ratio": 0.0
+      }
+    ],
+    "entries": 30,
+    "newest": "2026-10-23T16:19:55+00:00",
+    "age_hours": 3.2,
+    "fresh": true,
+    "median_feed_chars": 6,
+    "median_ratio": 0.0,
+    "page_fetchable": true,
+    "full_text": false
+  },
+  {
+    "name": "bdnews24.com",
+    "language": "en",
+    "feed_url": "https://bdnews24.com/stories.rss",
+    "robots_readable": true,
+    "checked_at": "2026-10-23T19:33:09.145749+00:00",
+    "samples": [
+      {
+        "title": "France boosts police to prevent repeat riots",
+        "link": "https://bdnews24.com/world/0ex9he5dcg",
+        "feed_chars": 4553,
+        "page_status": 200,
+        "page_chars": 4606,
+        "page_method": "p-tags",
+        "ratio": 0.99
+      },
+      {
+        "title": "Carrick accepts blame for United slump",
+        "link": "https://bdnews24.com/sport/6fako25b72",
+        "feed_chars": 3818,
+        "page_status": 200,
+        "page_chars": 3876,
+        "page_method": "p-tags",
+        "ratio": 0.99
+      },
+      {
+        "title": "2 Bangladeshis jailed in Canada for ‘trafficking, raping’ woman",
+        "link": "https://bdnews24.com/bangladesh/ma7criopx5",
+        "feed_chars": 2119,
+        "page_status": 200,
+        "page_chars": 2213,
+        "page_method": "p-tags",
+        "ratio": 0.96
+      }
+    ],
+    "entries": 50,
+    "newest": "2026-10-23T19:04:39+00:00",
+    "age_hours": 0.5,
+    "fresh": true,
+    "median_feed_chars": 3818,
+    "median_ratio": 0.99,
+    "page_fetchable": true,
+    "full_text": true
+  },
+  {
+    "name": "bdnews24 Bangla",
+    "language": "bn",
+    "feed_url": "https://bangla.bdnews24.com/stories.rss",
+    "robots_readable": true,
+    "checked_at": "2026-10-23T19:33:09.145749+00:00",
+    "samples": [
+      {
+        "title": "জিম্বাবুয়েকে গুঁড়িয়ে চ্যাম্পিয়ন আফগানিস্তান",
+        "link": "https://bangla.bdnews24.com/cricket/qajis2f350",
+        "feed_chars": 2101,
+        "page_status": 200,
+        "page_chars": 2089,
+        "page_method": "jsonld",
+        "ratio": 1.01
+      },
+      {
+        "title": "সৌদিতে পৌঁছানোর খবর স্ত্রীকে দেওয়ার পরই ক্ষেপণাস্ত্র হামলায় নিহত হন শাহেদ",
+        "link": "https://bangla.bdnews24.com/samagrabangladesh/saccx2q129",
+        "feed_chars": 1538,
+        "page_status": 200,
+        "page_chars": 1532,
+        "page_method": "jsonld",
+        "ratio": 1.0
+      },
+      {
+        "title": "দিল্লিতে এসআইআর বিরোধী বিক্ষোভে নেমে আটক শতাধিক",
+        "link": "https://bangla.bdnews24.com/world/os2z80kaki",
+        "feed_chars": 3223,
+        "page_status": 200,
+        "page_chars": 3162,
+        "page_method": "jsonld",
+        "ratio": 1.02
+      }
+    ],
+    "entries": 50,
+    "newest": "2026-10-23T19:15:37+00:00",
+    "age_hours": 0.3,
+    "fresh": true,
+    "median_feed_chars": 2101,
+    "median_ratio": 1.01,
+    "page_fetchable": true,
+    "full_text": true
+  },
+  {
+    "name": "Bangla Tribune",
+    "language": "bn",
+    "feed_url": "https://www.banglatribune.com/feed/",
+    "robots_readable": false,
+    "checked_at": "2026-10-23T19:33:09.145749+00:00",
+    "samples": [
+      {
+        "title": "অটোরিকশার সঙ্গে বাসের সংঘর্ষে দুজন নিহত: বাসে আগুন, মহাসড়ক অবরোধ",
+        "link": "https://www.banglatribune.com/country/chitagong/976329/%E0%A6%85%E0%A6%9F%E0%A7%8B%E0%A6%B0%E0%A6%BF%E0%A6%95%E0%A6%B6%E0%A6%BE%E0%A6%B0-%E0%A6%B8%E0%A6%99%E0%A7%8D%E0%A6%97%E0%A7%87-%E0%A6%AC%E0%A6%BE%E0%A6%B8%E0%A7%87%E0%A6%B0-%E0%A6%B8%E0%A6%82%E0%A6%98%E0%A6%B0%E0%A7%8D%E0%A6%B7%E0%A7%87-%E0%A6%A6%E0%A7%81%E0%A6%9C%E0%A6%A8-%E0%A6%A8%E0%A6%BF%E0%A6%B9%E0%A6%A4-%E0%A6%AC%E0%A6%BE%E0%A6%B8%E0%A7%87",
+        "feed_chars": 405,
+        "page_status": 403
+      },
+      {
+        "title": "মাদ্রাসায় বলাৎকার-ধর্ষণ বন্ধে আলেম সমাজ কেন সোচ্চার হতে পারেন না, প্রশ্ন আসিফ নজরুলের",
+        "link": "https://www.banglatribune.com/others/976328/%E0%A6%AE%E0%A6%BE%E0%A6%A6%E0%A7%8D%E0%A6%B0%E0%A6%BE%E0%A6%B8%E0%A6%BE%E0%A7%9F-%E0%A6%AC%E0%A6%B2%E0%A6%BE%E0%A7%8E%E0%A6%95%E0%A6%BE%E0%A6%B0-%E0%A6%A7%E0%A6%B0%E0%A7%8D%E0%A6%B7%E0%A6%A3-%E0%A6%AC%E0%A6%A8%E0%A7%8D%E0%A6%A7%E0%A7%87-%E0%A6%86%E0%A6%B2%E0%A7%87%E0%A6%AE-%E0%A6%B8%E0%A6%AE%E0%A6%BE%E0%A6%9C-%E0%A6%95%E0%A7%87%E0%A6%A8",
+        "feed_chars": 398,
+        "page_status": 403
+      },
+      {
+        "title": "কেনিয়ার কাছে হারলো বাংলাদেশের মেয়েরা",
+        "link": "https://www.banglatribune.com/sport/other-sports/976327/%E0%A6%95%E0%A7%87%E0%A6%A8%E0%A6%BF%E0%A7%9F%E0%A6%BE%E0%A6%B0-%E0%A6%95%E0%A6%BE%E0%A6%9B%E0%A7%87-%E0%A6%B9%E0%A6%BE%E0%A6%B0%E0%A6%B2%E0%A7%8B-%E0%A6%AC%E0%A6%BE%E0%A6%82%E0%A6%B2%E0%A6%BE%E0%A6%A6%E0%A7%87%E0%A6%B6%E0%A7%87%E0%A6%B0-%E0%A6%AE%E0%A7%87%E0%A7%9F%E0%A7%87%E0%A6%B0%E0%A6%BE",
+        "feed_chars": 396,
+        "page_status": 403
+      }
+    ],
+    "entries": 100,
+    "newest": "2026-10-23T19:31:00+00:00",
+    "age_hours": 0.0,
+    "fresh": true,
+    "median_feed_chars": 398,
+    "median_ratio": null,
+    "page_fetchable": false,
+    "full_text": false
+  },
+  {
+    "name": "Jago News 24",
+    "language": "bn",
+    "feed_url": "https://www.jagonews24.com/rss/rss.xml",
+    "robots_readable": true,
+    "checked_at": "2026-10-23T19:33:09.145749+00:00",
+    "samples": [
+      {
+        "title": "জিম্বাবুয়েকে উড়িয়ে ত্রিদেশীয় সিরিজে অপরাজিত চ্যাম্পিয়ন আফগানিস্তান",
+        "link": "https://www.jagonews24.com/sports/cricket/1171254",
+        "feed_chars": 127,
+        "page_status": 403
+      },
+      {
+        "title": "যশোরের যুবককে সৌদি আরবে অপহরণের অভিযোগ",
+        "link": "https://www.jagonews24.com/country/news/1171253",
+        "feed_chars": 118,
+        "page_status": 403
+      },
+      {
+        "title": "বিয়ের ২৩ দিনের মাথায় ড্রাইভারের সঙ্গে উধাও বিএনপি নেতার স্ত্রী",
+        "link": "https://www.jagonews24.com/country/news/1171252",
+        "feed_chars": 179,
+        "page_status": 403
+      }
+    ],
+    "entries": 100,
+    "newest": "2026-10-23T18:28:01+00:00",
+    "age_hours": 1.1,
+    "fresh": true,
+    "median_feed_chars": 127,
+    "median_ratio": null,
+    "page_fetchable": false,
+    "full_text": false
+  },
+  {
+    "name": "Dhaka Post",
+    "language": "bn",
+    "feed_url": "https://www.dhakapost.com/rss/rss.xml",
+    "robots_readable": true,
+    "checked_at": "2026-10-23T19:33:09.145749+00:00",
+    "samples": [
+      {
+        "title": "মোহাম্মদপুরে ছিনতাইয়ের প্রস্তুতির অভিযোগে সুইচ গিয়ারসহ যুবক গ্রেপ্তার",
+        "link": "https://www.dhakapost.com/national/492473",
+        "feed_chars": 0,
+        "page_status": 403
+      },
+      {
+        "title": "ঢাকা থেকে রিয়াদ-দাম্মামের ১৪১ ফ্লাইট বাতিল, ক্ষতিগ্রস্থ ২১৯৩৩ যাত্রী",
+        "link": "https://www.dhakapost.com/national/492472",
+        "feed_chars": 0,
+        "page_status": 403
+      },
+      {
+        "title": "ডিপ্লোমা শিক্ষার সংকট নিরসনে সরকারের উদ্যোগ নেই: ছাত্রশিবির সভাপতি",
+        "link": "https://www.dhakapost.com/national/492471",
+        "feed_chars": 0,
+        "page_status": 403
+      }
+    ],
+    "entries": 20,
+    "newest": "2026-10-23T19:24:39+00:00",
+    "age_hours": 0.1,
+    "fresh": true,
+    "median_feed_chars": 0,
+    "median_ratio": null,
+    "page_fetchable": false,
+    "full_text": false
+  },
+  {
+    "name": "Dhaka Tribune",
+    "language": "en",
+    "feed_url": "https://www.dhakatribune.com/feed/",
+    "robots_readable": false,
+    "checked_at": "2026-10-23T19:33:09.145749+00:00",
+    "samples": [
+      {
+        "title": "Crude bomb explodes in front of old Ramna Police Station",
+        "link": "https://www.dhakatribune.com/bangladesh/422778/crude-bomb-explodes-in-front-of-old-ramna-police",
+        "feed_chars": 57,
+        "page_status": 403
+      },
+      {
+        "title": "A taste of Tashkent in autumnal Moscow: Remembering Kishmish",
+        "link": "https://www.dhakatribune.com/feature/travel/422761/a-taste-of-tashkent-in-autumnal-moscow",
+        "feed_chars": 143,
+        "page_status": 403
+      },
+      {
+        "title": "Two arrested in Naogaon over loudspeaker campaign on Hasina’s return",
+        "link": "https://www.dhakatribune.com/bangladesh/nation/422775/two-arrested-in-naogaon-over-loudspeaker-campaign",
+        "feed_chars": 68,
+        "page_status": 403
+      }
+    ],
+    "entries": 100,
+    "newest": "2026-10-23T18:13:47+00:00",
+    "age_hours": 1.3,
+    "fresh": true,
+    "median_feed_chars": 68,
+    "median_ratio": null,
+    "page_fetchable": false,
+    "full_text": false
+  },
+  {
+    "name": "Dhaka Tribune Bangla",
+    "language": "bn",
+    "feed_url": "https://bangla.dhakatribune.com/feed/",
+    "robots_readable": false,
+    "checked_at": "2026-10-23T19:33:09.145749+00:00",
+    "samples": [
+      {
+        "title": "ভাণ্ডারিয়ায় ৬ বছরের শিশুকে যৌন নির্যাতনের অভিযোগ, বিচার দাবি পরিবারের",
+        "link": "https://bangla.dhakatribune.com/bangladesh/111754/%E0%A6%AD%E0%A6%BE%E0%A6%A3%E0%A7%8D%E0%A6%A1%E0%A6%BE%E0%A6%B0%E0%A6%BF%E0%A7%9F%E0%A6%BE%E0%A7%9F-%E0%A7%AC-%E0%A6%AC%E0%A6%9B%E0%A6%B0%E0%A7%87%E0%A6%B0-%E0%A6%B6%E0%A6%BF%E0%A6%B6%E0%A7%81%E0%A6%95%E0%A7%87-%E0%A6%AF%E0%A7%8C%E0%A6%A8-%E0%A6%A8%E0%A6%BF%E0%A6%B0%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%A4%E0%A6%A8%E0%A7%87%E0%A6%B0-%E0%A6%85%E0%A6%AD%E0%A6%BF%E0%A6%AF%E0%A7%8B%E0%A6%97",
+        "feed_chars": 405,
+        "page_status": 403
+      },
+      {
+        "title": "শিশু শিক্ষার্থীকে যৌন নির্যাতনের অভিযোগ, মাদ্রাসার শিক্ষক-পরিচালক গ্রেপ্তার",
+        "link": "https://bangla.dhakatribune.com/bangladesh/111753/%E0%A6%B6%E0%A6%BF%E0%A6%B6%E0%A7%81-%E0%A6%B6%E0%A6%BF%E0%A6%95%E0%A7%8D%E0%A6%B7%E0%A6%BE%E0%A6%B0%E0%A7%8D%E0%A6%A5%E0%A7%80%E0%A6%95%E0%A7%87-%E0%A6%AF%E0%A7%8C%E0%A6%A8-%E0%A6%A8%E0%A6%BF%E0%A6%B0%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%A4%E0%A6%A8%E0%A7%87%E0%A6%B0-%E0%A6%85%E0%A6%AD%E0%A6%BF%E0%A6%AF%E0%A7%8B%E0%A6%97-%E0%A6%AE%E0%A6%BE%E0%A6%A6%E0%A7%8D%E0%A6%B0%E0%A6%BE%E0%A6%B8%E0%A6%BE%E0%A6%B0",
+        "feed_chars": 405,
+        "page_status": 403
+      },
+      {
+        "title": "সাতকানিয়ায় মিনিবাস-সিএনজি সংঘর্ষে নিহত ১, বাসে আগুন",
+        "link": "https://bangla.dhakatribune.com/bangladesh/111752/%E0%A6%B8%E0%A6%BE%E0%A6%A4%E0%A6%95%E0%A6%BE%E0%A6%A8%E0%A6%BF%E0%A7%9F%E0%A6%BE%E0%A7%9F-%E0%A6%AE%E0%A6%BF%E0%A6%A8%E0%A6%BF%E0%A6%AC%E0%A6%BE%E0%A6%B8-%E0%A6%B8%E0%A6%BF%E0%A6%8F%E0%A6%A8%E0%A6%9C%E0%A6%BF-%E0%A6%B8%E0%A6%82%E0%A6%98%E0%A6%B0%E0%A7%8D%E0%A6%B7%E0%A7%87-%E0%A6%A8%E0%A6%BF%E0%A6%B9%E0%A6%A4-%E0%A7%A7-%E0%A6%AC%E0%A6%BE%E0%A6%B8%E0%A7%87",
+        "feed_chars": 409,
+        "page_status": 403
+      }
+    ],
+    "entries": 100,
+    "newest": "2026-10-23T18:58:25+00:00",
+    "age_hours": 0.6,
+    "fresh": true,
+    "median_feed_chars": 405,
+    "median_ratio": null,
+    "page_fetchable": false,
+    "full_text": false
+  },
+  {
+    "name": "Desh Rupantor",
+    "language": "bn",
+    "feed_url": "https://www.deshrupantor.com/feed/",
+    "robots_readable": false,
+    "checked_at": "2026-10-23T19:33:09.145749+00:00",
+    "samples": [
+      {
+        "title": "দ্রুততম ইমরান ও শিরিন",
+        "link": "https://www.deshrupantor.com/729672/%E0%A6%A6%E0%A7%8D%E0%A6%B0%E0%A7%81%E0%A6%A4%E0%A6%A4%E0%A6%AE-%E0%A6%87%E0%A6%AE%E0%A6%B0%E0%A6%BE%E0%A6%A8-%E0%A6%93-%E0%A6%B6%E0%A6%BF%E0%A6%B0%E0%A6%BF%E0%A6%A8",
+        "feed_chars": 404,
+        "page_status": 403
+      },
+      {
+        "title": "ইনফান্তিনোকে এশিয়ার সমর্থন",
+        "link": "https://www.deshrupantor.com/729671/%E0%A6%87%E0%A6%A8%E0%A6%AB%E0%A6%BE%E0%A6%A8%E0%A7%8D%E0%A6%A4%E0%A6%BF%E0%A6%A8%E0%A7%8B%E0%A6%95%E0%A7%87-%E0%A6%8F%E0%A6%B6%E0%A6%BF%E0%A7%9F%E0%A6%BE%E0%A6%B0-%E0%A6%B8%E0%A6%AE%E0%A6%B0%E0%A7%8D%E0%A6%A5%E0%A6%A8",
+        "feed_chars": 410,
+        "page_status": 403
+      },
+      {
+        "title": "প্রথম দক্ষিণ এশীয় প্যারা গেমস হবে বাংলাদেশে!",
+        "link": "https://www.deshrupantor.com/729670/%E0%A6%AA%E0%A7%8D%E0%A6%B0%E0%A6%A5%E0%A6%AE-%E0%A6%A6%E0%A6%95%E0%A7%8D%E0%A6%B7%E0%A6%BF%E0%A6%A3-%E0%A6%8F%E0%A6%B6%E0%A7%80%E0%A7%9F-%E0%A6%AA%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%B0%E0%A6%BE-%E0%A6%97%E0%A7%87%E0%A6%AE%E0%A6%B8-%E0%A6%B9%E0%A6%AC%E0%A7%87-%E0%A6%AC%E0%A6%BE%E0%A6%82%E0%A6%B2%E0%A6%BE%E0%A6%A6%E0%A7%87%E0%A6%B6%E0%A7%87",
+        "feed_chars": 410,
+        "page_status": 403
+      }
+    ],
+    "entries": 100,
+    "newest": "2026-10-23T19:27:47+00:00",
+    "age_hours": 0.1,
+    "fresh": true,
+    "median_feed_chars": 410,
+    "median_ratio": null,
+    "page_fetchable": false,
+    "full_text": false
+  },
+  {
+    "name": "Amar Desh",
+    "language": "bn",
+    "feed_url": "https://www.dailyamardesh.com/feed",
+    "robots_readable": true,
+    "checked_at": "2026-10-23T19:33:09.145749+00:00",
+    "samples": [
+      {
+        "title": "লন্ডনে সাবেক ভূমিমন্ত্রীর ভাইয়ের ২৪৭ কোটি টাকা দামের ফ্ল্যাট জব্দ",
+        "link": "https://www.dailyamardesh.com/national/amd7miskcmzzm",
+        "feed_chars": 300,
+        "page_status": 200,
+        "page_chars": 3208,
+        "page_method": "p-tags",
+        "ratio": 0.09
+      },
+      {
+        "title": "ভারতে গরু পাচারের অভিযোগে পুলিশের গুলির শিকার শত শত, অধিকাংশই মুসলিম",
+        "link": "https://www.dailyamardesh.com/world/india/amdkv0xtg65lw",
+        "feed_chars": 299,
+        "page_status": 200,
+        "page_chars": 3651,
+        "page_method": "p-tags",
+        "ratio": 0.08
+      },
+      {
+        "title": "শেষটা জয়ে রাঙাল ফর্টিস",
+        "link": "https://www.dailyamardesh.com/sports/football/amd341aor8q86",
+        "feed_chars": 300,
+        "page_status": 200,
+        "page_chars": 2032,
+        "page_method": "p-tags",
+        "ratio": 0.15
+      }
+    ],
+    "entries": 20,
+    "newest": "2026-10-23T19:24:25+00:00",
+    "age_hours": 0.1,
+    "fresh": true,
+    "median_feed_chars": 300,
+    "median_ratio": 0.09,
+    "page_fetchable": true,
+    "full_text": false
+  },
+  {
+    "name": "Ajker Patrika",
+    "language": "bn",
+    "feed_url": "https://www.ajkerpatrika.com/feed",
+    "robots_readable": true,
+    "checked_at": "2026-10-23T19:33:09.145749+00:00",
+    "samples": [
+      {
+        "title": "৩০০ ফিট এলাকায় প্রাইভেটকারের ধাক্কায় পথচারী নিহত",
+        "link": "https://www.ajkerpatrika.com/bangladesh/dhaka/ajpzrh0ncpc7u",
+        "feed_chars": 182,
+        "page_status": 200,
+        "page_chars": 1788,
+        "page_method": "p-tags",
+        "ratio": 0.1
+      },
+      {
+        "title": "বাসের ধাক্কায় অটোরিকশায় থাকা বাবা-মেয়ের মৃত্যু, বাসে আগুন",
+        "link": "https://www.ajkerpatrika.com/bangladesh/chattogram/ajp8c1yjkuc8a",
+        "feed_chars": 223,
+        "page_status": 200,
+        "page_chars": 3003,
+        "page_method": "p-tags",
+        "ratio": 0.07
+      },
+      {
+        "title": "পূজায় সিলেটে রেকর্ড গড়লেন পর্যটকেরা",
+        "link": "https://www.ajkerpatrika.com/bangladesh/sylhet/ajph9ny0chyts",
+        "feed_chars": 258,
+        "page_status": 200,
+        "page_chars": 4434,
+        "page_method": "p-tags",
+        "ratio": 0.06
+      }
+    ],
+    "entries": 20,
+    "newest": "2026-10-23T18:54:35+00:00",
+    "age_hours": 0.6,
+    "fresh": true,
+    "median_feed_chars": 223,
+    "median_ratio": 0.07,
+    "page_fetchable": true,
+    "full_text": false
+  },
+  {
+    "name": "Barta24",
+    "language": "bn",
+    "feed_url": "https://barta24.com/rss/rss.xml",
+    "robots_readable": true,
+    "checked_at": "2026-10-23T19:33:09.145749+00:00",
+    "samples": [
+      {
+        "title": "লন্ডনে সাবেক ভূমিমন্ত্রীর ভাইয়ের দেড় কোটি পাউন্ডের ফ্ল্যাট জব্দ",
+        "link": "https://barta24.com/details/international/344369",
+        "feed_chars": 321,
+        "page_status": 200,
+        "page_chars": 0,
+        "page_method": "p-tags",
+        "ratio": null
+      },
+      {
+        "title": "সাতকানিয়ায় বাস-অটোরিকশা সংঘর্ষে নিহত ২, বাসে আগুন",
+        "link": "https://barta24.com/details/national/344368",
+        "feed_chars": 259,
+        "page_status": 200,
+        "page_chars": 0,
+        "page_method": "p-tags",
+        "ratio": null
+      },
+      {
+        "title": "সাতকানিয়ায় বাস-অটোরিকশা সংঘর্ষে নিহত ২, বাসে আগুন",
+        "link": "https://barta24.com/details/national/344368",
+        "feed_chars": 259,
+        "page_status": 200,
+        "page_chars": 0,
+        "page_method": "p-tags",
+        "ratio": null
+      }
+    ],
+    "entries": 120,
+    "newest": "2026-10-23T17:52:16+00:00",
+    "age_hours": 1.7,
+    "fresh": true,
+    "median_feed_chars": 259,
+    "median_ratio": null,
+    "page_fetchable": true,
+    "full_text": false
+  },
+  {
+    "name": "Channel i Online",
+    "language": "bn",
+    "feed_url": "https://www.channelionline.com/rss.xml",
+    "robots_readable": true,
+    "checked_at": "2026-10-23T19:33:09.145749+00:00",
+    "samples": [
+      {
+        "title": "বুড়িগঙ্গায় শারদীয় দুর্গাপূজার প্রতিমা বিসর্জনে সম্প্রীতির অনন্য দৃষ্টান্ত",
+        "link": "https://www.channelionline.com/a-unique-example-of-harmony-during-the-immersion-of-durga-puja-idols-in-the-buriganga-river/",
+        "feed_chars": 412,
+        "page_status": 200,
+        "page_chars": 1269,
+        "page_method": "jsonld",
+        "ratio": 0.32
+      },
+      {
+        "title": "‘প্রিন্সেস অব অ্যাস্টুরিয়াস অ্যাওয়ার্ড ফর স্পোর্টস’ সম্মাননা গ্রহণ করলেন মেসি",
+        "link": "https://www.channelionline.com/messi-princess-of-asturias-award-for-sports-argentina-spain/",
+        "feed_chars": 432,
+        "page_status": 200,
+        "page_chars": 1163,
+        "page_method": "jsonld",
+        "ratio": 0.37
+      },
+      {
+        "title": "প্লাস্টিকের বিনিময়ে মিলছে গাছের চারা",
+        "link": "https://www.channelionline.com/tree-saplings-in-exchange-for-plastic-prayas-commits-to-building-a-greener-pakundia/",
+        "feed_chars": 392,
+        "page_status": 200,
+        "page_chars": 3325,
+        "page_method": "jsonld",
+        "ratio": 0.12
+      }
+    ],
+    "entries": 30,
+    "newest": "2026-10-23T18:19:47+00:00",
+    "age_hours": 1.2,
+    "fresh": true,
+    "median_feed_chars": 412,
+    "median_ratio": 0.32,
+    "page_fetchable": true,
+    "full_text": false
+  },
+  {
+    "name": "NTV",
+    "language": "bn",
+    "feed_url": "https://www.ntvbd.com/rss.xml",
+    "robots_readable": true,
+    "checked_at": "2026-10-23T19:33:09.145749+00:00",
+    "samples": [
+      {
+        "title": "অফ দ্যা রেকর্ড : পর্ব ২ । স্পোর্টস টক : পর্ব ১",
+        "link": "https://www.ntvbd.com/video/off-the-record/sports-talk/sports-talks/record-ep-2-sports-talk-ep-1",
+        "feed_chars": 284,
+        "page_status": 200,
+        "page_chars": 114,
+        "page_method": "p-tags",
+        "ratio": 2.49
+      },
+      {
+        "title": "স্পোর্টস টক",
+        "link": "https://www.ntvbd.com/video/off-the-record/sports-talk/sports-talks",
+        "feed_chars": 392,
+        "page_status": 200,
+        "page_chars": 114,
+        "page_method": "p-tags",
+        "ratio": 3.44
+      },
+      {
+        "title": "ট্রাভেল টক",
+        "link": "https://www.ntvbd.com/video/off-the-record/travel-talk/travel-talk",
+        "feed_chars": 331,
+        "page_status": 200,
+        "page_chars": 114,
+        "page_method": "p-tags",
+        "ratio": 2.9
+      }
+    ],
+    "entries": 10,
+    "newest": "2026-10-22T12:07:00+00:00",
+    "age_hours": 31.4,
+    "fresh": false,
+    "median_feed_chars": 331,
+    "median_ratio": 2.9,
+    "page_fetchable": true,
+    "full_text": false
+  },
+  {
+    "name": "The Daily Star",
+    "language": "en",
+    "feed_url": "https://www.thedailystar.net/rss.xml",
+    "robots_readable": true,
+    "checked_at": "2026-10-23T19:33:09.145749+00:00",
+    "samples": [
+      {
+        "title": "Ramisa rape and murder: Sohel Rana mentions new name as charges framed",
+        "link": "https://www.thedailystar.net/news/crime-justice/news/ramisa-rape-and-murder-sohel-rana-mentions-new-name-charges-framed-4187931",
+        "feed_chars": 4349,
+        "page_status": 200,
+        "page_chars": 3742,
+        "page_method": "p-tags",
+        "ratio": 1.16
+      },
+      {
+        "title": "Why Bangladesh must pivot to renewable energy now",
+        "link": "https://www.thedailystar.net/slow-reads/big-picture/news/why-bangladesh-must-pivot-renewable-energy-now-4184106",
+        "feed_chars": 16008,
+        "page_status": 200,
+        "page_chars": 15636,
+        "page_method": "p-tags",
+        "ratio": 1.02
+      },
+      {
+        "title": "The forgotten art of Bengali advertising",
+        "link": "https://www.thedailystar.net/slow-reads/focus/news/the-forgotten-art-bengali-advertising-4177626",
+        "feed_chars": 14654,
+        "page_status": 200,
+        "page_chars": 14159,
+        "page_method": "p-tags",
+        "ratio": 1.03
+      }
+    ],
+    "entries": 8,
+    "newest": "2026-06-01T10:43:08+00:00",
+    "age_hours": 3464.8,
+    "fresh": false,
+    "median_feed_chars": 14654,
+    "median_ratio": 1.03,
+    "page_fetchable": true,
+    "full_text": true
+  },
+  {
+    "name": "The Daily Star Bangla",
+    "language": "bn",
+    "feed_url": "https://bangla.thedailystar.net/rss.xml",
+    "robots_readable": true,
+    "checked_at": "2026-10-23T19:33:09.145749+00:00",
+    "samples": [
+      {
+        "title": "শেরপুর-৩ আসনের জামায়াত প্রার্থী মারা গেছেন",
+        "link": "https://bangla.thedailystar.net/news/saerapaura-3-asanaera-jaamaayaata-paraarathai-maaraa-gaechaena-3895481",
+        "feed_chars": 1252,
+        "page_status": 200,
+        "page_chars": 1085,
+        "page_method": "p-tags",
+        "ratio": 1.15
+      }
+    ],
+    "entries": 1,
+    "newest": "2026-02-04T02:43:57+00:00",
+    "age_hours": 6280.8,
+    "fresh": false,
+    "median_feed_chars": 1252,
+    "median_ratio": 1.15,
+    "page_fetchable": true,
+    "full_text": true
+  },
+  {
+    "name": "The Business Standard",
+    "language": "en",
+    "feed_url": "https://www.tbsnews.net/rss.xml",
+    "robots_readable": true,
+    "checked_at": "2026-10-23T19:33:09.145749+00:00",
+    "samples": [
+      {
+        "title": "Commodities continue to be dearer",
+        "link": "https://www.tbsnews.net/economy/bazaar/commodities-continue-be-dearer-328855",
+        "feed_chars": 4793,
+        "page_status": 200,
+        "page_chars": 4592,
+        "page_method": "p-tags",
+        "ratio": 1.04
+      },
+      {
+        "title": "Mithun, Mushfiqur fifties guide Tigers to win in warm-up",
+        "link": "https://www.tbsnews.net/sports/mithun-mushfiqur-fifties-guide-tigers-win-warm",
+        "feed_chars": 2362,
+        "page_status": 200,
+        "page_chars": 2363,
+        "page_method": "p-tags",
+        "ratio": 1.0
+      },
+      {
+        "title": "Jesus takes centre stage as Brazil win Copa America",
+        "link": "https://www.tbsnews.net/sports/jesus-takes-centre-stage-brazil-win-copa-america",
+        "feed_chars": 2065,
+        "page_status": 200,
+        "page_chars": 2062,
+        "page_method": "p-tags",
+        "ratio": 1.0
+      }
+    ],
+    "entries": 10,
+    "newest": "2021-11-12T17:30:00+00:00",
+    "age_hours": 43346.1,
+    "fresh": false,
+    "median_feed_chars": 2362,
+    "median_ratio": 1.0,
+    "page_fetchable": true,
+    "full_text": true
+  },
+  {
+    "name": "The Business Standard Bangla",
+    "language": "bn",
+    "feed_url": "https://www.tbsnews.net/bangla/rss.xml",
+    "robots_readable": true,
+    "checked_at": "2026-10-23T19:33:09.145749+00:00",
+    "samples": [
+      {
+        "title": "সংসদ ভবন এলাকায় 'জুলাই যোদ্ধাদের' সঙ্গে পুলিশের ধাওয়া-পাল্টা ধাওয়া, গাড়ি ভাঙচুর-সড়কে আগুন",
+        "link": "https://www.tbsnews.net/bangla/bangladesh/news-details-402331",
+        "feed_chars": 3633,
+        "page_status": 200,
+        "page_chars": 3616,
+        "page_method": "p-tags",
+        "ratio": 1.0
+      },
+      {
+        "title": "ব্রিটিশ আমলে শুরু যার, এখনো সগৌরবে টিকে আছে ঢাকার সেই কল্যাণী আলতা!",
+        "link": "https://www.tbsnews.net/bangla/feature/news-details-382316",
+        "feed_chars": 7889,
+        "page_status": 200,
+        "page_chars": 8001,
+        "page_method": "p-tags",
+        "ratio": 0.99
+      },
+      {
+        "title": "১০০ বছরে লাইকা: ছোট্ট এক জার্মান ক্যামেরা যেভাবে চিরতরে বদলে দিয়েছিল ফটোগ্রাফির ইতিহাস",
+        "link": "https://www.tbsnews.net/bangla/international/news-details-372781",
+        "feed_chars": 8280,
+        "page_status": 200,
+        "page_chars": 7855,
+        "page_method": "p-tags",
+        "ratio": 1.05
+      }
+    ],
+    "entries": 10,
+    "newest": "2025-10-17T06:20:00+00:00",
+    "age_hours": 8917.2,
+    "fresh": false,
+    "median_feed_chars": 7889,
+    "median_ratio": 1.0,
+    "page_fetchable": true,
+    "full_text": true
+  }
+]

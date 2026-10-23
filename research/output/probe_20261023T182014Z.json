@@ -1,0 +1,690 @@
+[
+  {
+    "name": "Prothom Alo",
+    "homepage": "https://www.prothomalo.com",
+    "language": "bn",
+    "homepage_status": 200,
+    "final_url": "https://www.prothomalo.com",
+    "homepage_error": null,
+    "robots_status": 200,
+    "robots_sitemaps": [
+      "https://www.prothomalo.com/sitemap.xml",
+      "https://www.prothomalo.com/news_sitemap.xml"
+    ],
+    "advertised_feeds": [],
+    "feeds": [
+      {
+        "url": "https://www.prothomalo.com/rss.xml",
+        "status": 404,
+        "content_type": "text/html; charset=utf-8",
+        "ok": false,
+        "robots_allowed": true,
+        "entries": 0,
+        "feed_title": null,
+        "bozo": null,
+        "fields": {},
+        "newest": null,
+        "oldest": null,
+        "bengali_titles": 0,
+        "sample_titles": [],
+        "sample_links": [],
+        "error": null
+      },
+      {
+        "url": "https://www.prothomalo.com/rss",
+        "status": 404,
+        "content_type": "text/html; charset=utf-8",
+        "ok": false,
+        "robots_allowed": true,
+        "entries": 0,
+        "feed_title": null,
+        "bozo": null,
+        "fields": {},
+        "newest": null,
+        "oldest": null,
+        "bengali_titles": 0,
+        "sample_titles": [],
+        "sample_links": [],
+        "error": null
+      },
+      {
+        "url": "https://www.prothomalo.com/feed",
+        "status": 200,
+        "content_type": "text/xml; application/rss+xml; charset=utf-8",
+        "ok": true,
+        "robots_allowed": true,
+        "entries": 43,
+        "feed_title": "প্রথম আলো",
+        "bozo": null,
+        "fields": {
+          "title": 43,
+          "link": 43,
+          "published": 43,
+          "author": 43,
+          "summary": 17,
+          "content": 43,
+          "categories": 43,
+          "image": 41,
+          "guid": 43
+        },
+        "newest": "2026-10-23T17:48:04+00:00",
+        "oldest": "2022-10-23T13:00:00+00:00",
+        "bengali_titles": 43,
+        "sample_titles": [
+          "কক্সবাজারে আবারও হোটেলে আগুন",
+          "মেলানিয়া ট্রাম্পের মধ্যস্থতায় ইউক্রেনের ওলেশকি শহরে যুদ্ধবিরতি: হোয়াইট হাউস",
+          "বিদ্যুৎ ও পানি বন্ধ, উচ্ছেদ-আতঙ্কের মধ্যেই দিল্লির শতবর্ষী মসজিদে জুমার নামাজ পড়লেন মুসল্লিরা"
+        ],
+        "sample_links": [
+          "https://www.prothomalo.com/bangladesh/district/kksbaajaare-aabaaro-hottele-aagun",
+          "https://www.prothomalo.com/world/usa/a5mw8misys",
+          "https://www.prothomalo.com/world/india/jblj58coi4"
+        ],
+        "error": null
+      },
+      {
+        "url": "https://www.prothomalo.com/feed/",
+        "status": 200,
+        "content_type": "text/xml; application/rss+xml; charset=utf-8",
+        "ok": true,
+        "robots_allowed": true,
+        "entries": 43,
+        "feed_title": "প্রথম আলো",
+        "bozo": null,
+        "fields": {
+          "title": 43,
+          "link": 43,
+          "published": 43,
+          "author": 43,
+          "summary": 17,
+          "content": 43,
+          "categories": 43,
+          "image": 41,
+          "guid": 43
+        },
+        "newest": "2026-10-23T17:48:04+00:00",
+        "oldest": "2022-10-23T13:00:00+00:00",
+        "bengali_titles": 43,
+        "sample_titles": [
+          "কক্সবাজারে আবারও হোটেলে আগুন",
+          "মেলানিয়া ট্রাম্পের মধ্যস্থতায় ইউক্রেনের ওলেশকি শহরে যুদ্ধবিরতি: হোয়াইট হাউস",
+          "বিদ্যুৎ ও পানি বন্ধ, উচ্ছেদ-আতঙ্কের মধ্যেই দিল্লির শতবর্ষী মসজিদে জুমার নামাজ পড়লেন মুসল্লিরা"
+        ],
+        "sample_links": [
+          "https://www.prothomalo.com/bangladesh/district/kksbaajaare-aabaaro-hottele-aagun",
+          "https://www.prothomalo.com/world/usa/a5mw8misys",
+          "https://www.prothomalo.com/world/india/jblj58coi4"
+        ],
+        "error": null
+      }
+    ],
+    "sitemaps": [
+      {
+        "url": "https://www.prothomalo.com/sitemap.xml",
+        "status": 200,
+        "is_index": true,
+        "is_news": false,
+        "url_count": 62,
+        "child_sample": [
+          "https://www.prothomalo.com/sitemap/sitemap-static-pages.xml",
+          "https://www.prothomalo.com/sitemap/sitemap-section.xml",
+          "https://www.prothomalo.com/sitemap/sitemap-daily-2026-10-23.xml",
+          "https://www.prothomalo.com/sitemap/sitemap-daily-2026-10-22.xml",
+          "https://www.prothomalo.com/sitemap/sitemap-daily-2026-10-21.xml"
+        ],
+        "error": null
+      },
+      {
+        "url": "https://www.prothomalo.com/news_sitemap.xml",
+        "status": 200,
+        "is_index": false,
+        "is_news": true,
+        "url_count": 493,
+        "child_sample": [
+          "https://www.prothomalo.com/politics/bgwllkjrc9",
+          "https://www.prothomalo.com/bangladesh/63pcowdprv",
+          "https://www.prothomalo.com/sports/cricket/a5a7s1m8ck",
+          "https://www.prothomalo.com/bangladesh/district/kksbaajaare-aabaaro-hottele-aagun",
+          "https://www.prothomalo.com/world/usa/a5mw8misys"
+        ],
+        "error": null
+      }
+    ],
+    "probed_at": "2026-10-23T18:19:20.509421+00:00"
+  },
+  {
+    "name": "Prothom Alo English",
+    "homepage": "https://en.prothomalo.com",
+    "language": "en",
+    "homepage_status": 200,
+    "final_url": "https://en.prothomalo.com",
+    "homepage_error": null,
+    "robots_status": 200,
+    "robots_sitemaps": [
+      "https://en.prothomalo.com/sitemap.xml",
+      "https://en.prothomalo.com/news_sitemap.xml"
+    ],
+    "advertised_feeds": [],
+    "feeds": [
+      {
+        "url": "https://en.prothomalo.com/rss.xml",
+        "status": 404,
+        "content_type": "text/html; charset=utf-8",
+        "ok": false,
+        "robots_allowed": true,
+        "entries": 0,
+        "feed_title": null,
+        "bozo": null,
+        "fields": {},
+        "newest": null,
+        "oldest": null,
+        "bengali_titles": 0,
+        "sample_titles": [],
+        "sample_links": [],
+        "error": null
+      },
+      {
+        "url": "https://en.prothomalo.com/rss",
+        "status": 404,
+        "content_type": "text/html; charset=utf-8",
+        "ok": false,
+        "robots_allowed": true,
+        "entries": 0,
+        "feed_title": null,
+        "bozo": null,
+        "fields": {},
+        "newest": null,
+        "oldest": null,
+        "bengali_titles": 0,
+        "sample_titles": [],
+        "sample_links": [],
+        "error": null
+      },
+      {
+        "url": "https://en.prothomalo.com/feed",
+        "status": 200,
+        "content_type": "text/xml; application/rss+xml; charset=utf-8",
+        "ok": true,
+        "robots_allowed": true,
+        "entries": 2,
+        "feed_title": "Prothom Alo English",
+        "bozo": null,
+        "fields": {
+          "title": 2,
+          "link": 2,
+          "published": 2,
+          "author": 2,
+          "summary": 0,
+          "content": 2,
+          "categories": 2,
+          "image": 2,
+          "guid": 2
+        },
+        "newest": "2026-10-23T15:38:10+00:00",
+        "oldest": "2026-10-23T14:34:01+00:00",
+        "bengali_titles": 0,
+        "sample_titles": [
+          "Hotel catches fire in Cox’s Bazar; tourists flee to beach",
+          "'Scales' instead of 'brain' in Class VI ICT textbook; NCTB plans change"
+        ],
+        "sample_links": [
+          "https://en.prothomalo.com/bangladesh/local-news/1vbdlxs34t",
+          "https://en.prothomalo.com/youth/education/13jfpeilbu"
+        ],
+        "error": null
+      },
+      {
+        "url": "https://en.prothomalo.com/feed/",
+        "status": 200,
+        "content_type": "text/xml; application/rss+xml; charset=utf-8",
+        "ok": true,
+        "robots_allowed": true,
+        "entries": 2,
+        "feed_title": "Prothom Alo English",
+        "bozo": null,
+        "fields": {
+          "title": 2,
+          "link": 2,
+          "published": 2,
+          "author": 2,
+          "summary": 0,
+          "content": 2,
+          "categories": 2,
+          "image": 2,
+          "guid": 2
+        },
+        "newest": "2026-10-23T15:38:10+00:00",
+        "oldest": "2026-10-23T14:34:01+00:00",
+        "bengali_titles": 0,
+        "sample_titles": [
+          "Hotel catches fire in Cox’s Bazar; tourists flee to beach",
+          "'Scales' instead of 'brain' in Class VI ICT textbook; NCTB plans change"
+        ],
+        "sample_links": [
+          "https://en.prothomalo.com/bangladesh/local-news/1vbdlxs34t",
+          "https://en.prothomalo.com/youth/education/13jfpeilbu"
+        ],
+        "error": null
+      }
+    ],
+    "sitemaps": [
+      {
+        "url": "https://en.prothomalo.com/sitemap.xml",
+        "status": 200,
+        "is_index": true,
+        "is_news": false,
+        "url_count": 18,
+        "child_sample": [
+          "https://en.prothomalo.com/sitemap/sitemap-static-pages.xml",
+          "https://en.prothomalo.com/sitemap/sitemap-section.xml",
+          "https://en.prothomalo.com/sitemap/sitemap-daily-2026-10-23.xml",
+          "https://en.prothomalo.com/sitemap/sitemap-daily-2026-10-22.xml",
+          "https://en.prothomalo.com/sitemap/sitemap-daily-2026-10-21.xml"
+        ],
+        "error": null
+      },
+      {
+        "url": "https://en.prothomalo.com/news_sitemap.xml",
+        "status": 200,
+        "is_index": false,
+        "is_news": true,
+        "url_count": 68,
+        "child_sample": [
+          "https://en.prothomalo.com/bangladesh/local-news/1vbdlxs34t",
+          "https://en.prothomalo.com/youth/education/13jfpeilbu",
+          "https://en.prothomalo.com/bangladesh/politics/mo7n0twplm",
+          "https://en.prothomalo.com/entertainment/movies/97vcort5pk",
+          "https://en.prothomalo.com/photo/uyosi3pozy"
+        ],
+        "error": null
+      }
+    ],
+    "probed_at": "2026-10-23T18:19:31.877055+00:00"
+  },
+  {
+    "name": "The Daily Star",
+    "homepage": "https://www.thedailystar.net",
+    "language": "en",
+    "homepage_status": 200,
+    "final_url": "https://www.thedailystar.net",
+    "homepage_error": null,
+    "robots_status": 200,
+    "robots_sitemaps": [
+      "https://www.thedailystar.net/sitemap.xml",
+      "https://www.thedailystar.net/googlenews.xml"
+    ],
+    "advertised_feeds": [],
+    "feeds": [
+      {
+        "url": "https://www.thedailystar.net/rss.xml",
+        "status": 200,
+        "content_type": "application/rss+xml; charset=utf-8",
+        "ok": true,
+        "robots_allowed": true,
+        "entries": 8,
+        "feed_title": "The Daily Star - Journalism without fear or favour",
+        "bozo": "<unknown>:68:32: undefined entity",
+        "fields": {
+          "title": 8,
+          "link": 8,
+          "published": 8,
+          "author": 8,
+          "summary": 8,
+          "content": 0,
+          "categories": 0,
+          "image": 0,
+          "guid": 8
+        },
+        "newest": "2026-06-01T10:43:08+00:00",
+        "oldest": "2016-05-08T14:23:05+00:00",
+        "bengali_titles": 0,
+        "sample_titles": [
+          "Ramisa rape and murder: Sohel Rana mentions new name as charges framed",
+          "Why Bangladesh must pivot to renewable energy now",
+          "The forgotten art of Bengali advertising"
+        ],
+        "sample_links": [
+          "https://www.thedailystar.net/news/crime-justice/news/ramisa-rape-and-murder-sohel-rana-mentions-new-name-charges-framed-4187931",
+          "https://www.thedailystar.net/slow-reads/big-picture/news/why-bangladesh-must-pivot-renewable-energy-now-4184106",
+          "https://www.thedailystar.net/slow-reads/focus/news/the-forgotten-art-bengali-advertising-4177626"
+        ],
+        "error": null
+      },
+      {
+        "url": "https://www.thedailystar.net/rss",
+        "status": 404,
+        "content_type": "text/html; charset=utf-8",
+        "ok": false,
+        "robots_allowed": true,
+        "entries": 0,
+        "feed_title": null,
+        "bozo": null,
+        "fields": {},
+        "newest": null,
+        "oldest": null,
+        "bengali_titles": 0,
+        "sample_titles": [],
+        "sample_links": [],
+        "error": null
+      },
+      {
+        "url": "https://www.thedailystar.net/feed",
+        "status": 404,
+        "content_type": "text/html; charset=utf-8",
+        "ok": false,
+        "robots_allowed": true,
+        "entries": 0,
+        "feed_title": null,
+        "bozo": null,
+        "fields": {},
+        "newest": null,
+        "oldest": null,
+        "bengali_titles": 0,
+        "sample_titles": [],
+        "sample_links": [],
+        "error": null
+      },
+      {
+        "url": "https://www.thedailystar.net/feed/",
+        "status": 404,
+        "content_type": "text/html; charset=utf-8",
+        "ok": false,
+        "robots_allowed": true,
+        "entries": 0,
+        "feed_title": null,
+        "bozo": null,
+        "fields": {},
+        "newest": null,
+        "oldest": null,
+        "bengali_titles": 0,
+        "sample_titles": [],
+        "sample_links": [],
+        "error": null
+      },
+      {
+        "url": "https://www.thedailystar.net/rss/rss.xml",
+        "status": 404,
+        "content_type": "text/html; charset=utf-8",
+        "ok": false,
+        "robots_allowed": true,
+        "entries": 0,
+        "feed_title": null,
+        "bozo": null,
+        "fields": {},
+        "newest": null,
+        "oldest": null,
+        "bengali_titles": 0,
+        "sample_titles": [],
+        "sample_links": [],
+        "error": null
+      },
+      {
+        "url": "https://www.thedailystar.net/stories.rss",
+        "status": 404,
+        "content_type": "text/html; charset=utf-8",
+        "ok": false,
+        "robots_allowed": true,
+        "entries": 0,
+        "feed_title": null,
+        "bozo": null,
+        "fields": {},
+        "newest": null,
+        "oldest": null,
+        "bengali_titles": 0,
+        "sample_titles": [],
+        "sample_links": [],
+        "error": null
+      },
+      {
+        "url": "https://www.thedailystar.net/feed.xml",
+        "status": 404,
+        "content_type": "text/html; charset=utf-8",
+        "ok": false,
+        "robots_allowed": true,
+        "entries": 0,
+        "feed_title": null,
+        "bozo": null,
+        "fields": {},
+        "newest": null,
+        "oldest": null,
+        "bengali_titles": 0,
+        "sample_titles": [],
+        "sample_links": [],
+        "error": null
+      },
+      {
+        "url": "https://www.thedailystar.net/atom.xml",
+        "status": 404,
+        "content_type": "text/html; charset=utf-8",
+        "ok": false,
+        "robots_allowed": true,
+        "entries": 0,
+        "feed_title": null,
+        "bozo": null,
+        "fields": {},
+        "newest": null,
+        "oldest": null,
+        "bengali_titles": 0,
+        "sample_titles": [],
+        "sample_links": [],
+        "error": null
+      }
+    ],
+    "sitemaps": [
+      {
+        "url": "https://www.thedailystar.net/sitemap.xml",
+        "status": 200,
+        "is_index": true,
+        "is_news": false,
+        "url_count": 45,
+        "child_sample": [
+          "https://www.thedailystar.net/sitemaps/2026/sitemap-2026-1.xml",
+          "https://www.thedailystar.net/sitemaps/2025/sitemap-2025-1.xml",
+          "https://www.thedailystar.net/sitemaps/2025/sitemap-2025-2.xml",
+          "https://www.thedailystar.net/sitemaps/2024/sitemap-2024-1.xml",
+          "https://www.thedailystar.net/sitemaps/2024/sitemap-2024-2.xml"
+        ],
+        "error": null
+      },
+      {
+        "url": "https://www.thedailystar.net/googlenews.xml",
+        "status": 200,
+        "is_index": false,
+        "is_news": true,
+        "url_count": 275,
+        "child_sample": [
+          "https://www.thedailystar.net/slow-reads/unheard-voices/news/what-bangladesh-needs-cop31-4305796",
+          "https://www.thedailystar.net/ds/business-plus/news/the-road-mirpurs-business-boom-4305846",
+          "https://www.thedailystar.net/news/accidents-and-fires/news/fire-coxs-bazar-hotel-sparks-panic-among-tourists-4305841",
+          "https://www.thedailystar.net/news/governance/news/sports-can-protect-youth-addiction-frustration-president-4305836",
+          "https://www.thedailystar.net/health/food/price-essentials/news/veggies-bring-relief-rice-prices-bite-4305831"
+        ],
+        "error": null
+      }
+    ],
+    "probed_at": "2026-10-23T18:19:40.109631+00:00"
+  },
+  {
+    "name": "The Daily Star Bangla",
+    "homepage": "https://bangla.thedailystar.net",
+    "language": "bn",
+    "homepage_status": 200,
+    "final_url": "https://bangla.thedailystar.net",
+    "homepage_error": null,
+    "robots_status": 200,
+    "robots_sitemaps": [
+      "https://bangla.thedailystar.net/sitemap.xml"
+    ],
+    "advertised_feeds": [],
+    "feeds": [
+      {
+        "url": "https://bangla.thedailystar.net/rss.xml",
+        "status": 200,
+        "content_type": "application/rss+xml; charset=utf-8",
+        "ok": true,
+        "robots_allowed": true,
+        "entries": 1,
+        "feed_title": "The Daily Star",
+        "bozo": null,
+        "fields": {
+          "title": 1,
+          "link": 1,
+          "published": 1,
+          "author": 1,
+          "summary": 1,
+          "content": 0,
+          "categories": 0,
+          "image": 0,
+          "guid": 1
+        },
+        "newest": "2026-02-04T02:43:57+00:00",
+        "oldest": "2026-02-04T02:43:57+00:00",
+        "bengali_titles": 1,
+        "sample_titles": [
+          "শেরপুর-৩ আসনের জামায়াত প্রার্থী মারা গেছেন"
+        ],
+        "sample_links": [
+          "https://bangla.thedailystar.net/news/saerapaura-3-asanaera-jaamaayaata-paraarathai-maaraa-gaechaena-3895481"
+        ],
+        "error": null
+      },
+      {
+        "url": "https://bangla.thedailystar.net/rss",
+        "status": 404,
+        "content_type": "text/html; charset=utf-8",
+        "ok": false,
+        "robots_allowed": true,
+        "entries": 0,
+        "feed_title": null,
+        "bozo": null,
+        "fields": {},
+        "newest": null,
+        "oldest": null,
+        "bengali_titles": 0,
+        "sample_titles": [],
+        "sample_links": [],
+        "error": null
+      },
+      {
+        "url": "https://bangla.thedailystar.net/feed",
+        "status": 404,
+        "content_type": "text/html; charset=utf-8",
+        "ok": false,
+        "robots_allowed": true,
+        "entries": 0,
+        "feed_title": null,
+        "bozo": null,
+        "fields": {},
+        "newest": null,
+        "oldest": null,
+        "bengali_titles": 0,
+        "sample_titles": [],
+        "sample_links": [],
+        "error": null
+      },
+      {
+        "url": "https://bangla.thedailystar.net/feed/",
+        "status": 404,
+        "content_type": "text/html; charset=utf-8",
+        "ok": false,
+        "robots_allowed": true,
+        "entries": 0,
+        "feed_title": null,
+        "bozo": null,
+        "fields": {},
+        "newest": null,
+        "oldest": null,
+        "bengali_titles": 0,
+        "sample_titles": [],
+        "sample_links": [],
+        "error": null
+      },
+      {
+        "url": "https://bangla.thedailystar.net/rss/rss.xml",
+        "status": 404,
+        "content_type": "text/html; charset=utf-8",
+        "ok": false,
+        "robots_allowed": true,
+        "entries": 0,
+        "feed_title": null,
+        "bozo": null,
+        "fields": {},
+        "newest": null,
+        "oldest": null,
+        "bengali_titles": 0,
+        "sample_titles": [],
+        "sample_links": [],
+        "error": null
+      },
+      {
+        "url": "https://bangla.thedailystar.net/stories.rss",
+        "status": 404,
+        "content_type": "text/html; charset=utf-8",
+        "ok": false,
+        "robots_allowed": true,
+        "entries": 0,
+        "feed_title": null,
+        "bozo": null,
+        "fields": {},
+        "newest": null,
+        "oldest": null,
+        "bengali_titles": 0,
+        "sample_titles": [],
+        "sample_links": [],
+        "error": null
+      },
+      {
+        "url": "https://bangla.thedailystar.net/feed.xml",
+        "status": 404,
+        "content_type": "text/html; charset=utf-8",
+        "ok": false,
+        "robots_allowed": true,
+        "entries": 0,
+        "feed_title": null,
+        "bozo": null,
+        "fields": {},
+        "newest": null,
+        "oldest": null,
+        "bengali_titles": 0,
+        "sample_titles": [],
+        "sample_links": [],
+        "error": null
+      },
+      {
+        "url": "https://bangla.thedailystar.net/atom.xml",
+        "status": 404,
+        "content_type": "text/html; charset=utf-8",
+        "ok": false,
+        "robots_allowed": true,
+        "entries": 0,
+        "feed_title": null,
+        "bozo": null,
+        "fields": {},
+        "newest": null,
+        "oldest": null,
+        "bengali_titles": 0,
+        "sample_titles": [],
+        "sample_links": [],
+        "error": null
+      }
+    ],
+    "sitemaps": [
+      {
+        "url": "https://bangla.thedailystar.net/sitemap.xml",
+        "status": 200,
+        "is_index": true,
+        "is_news": false,
+        "url_count": 11,
+        "child_sample": [
+          "https://bangla.thedailystar.net/sitemaps/2026/sitemap-2026-1.xml",
+          "https://bangla.thedailystar.net/sitemaps/2025/sitemap-2025-1.xml",
+          "https://bangla.thedailystar.net/sitemaps/2024/sitemap-2024-1.xml",
+          "https://bangla.thedailystar.net/sitemaps/2023/sitemap-2023-1.xml",
+          "https://bangla.thedailystar.net/sitemaps/2022/sitemap-2022-1.xml"
+        ],
+        "error": null
+      }
+    ],
+    "probed_at": "2026-10-23T18:19:56.386935+00:00"
+  }
+]

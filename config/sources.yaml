@@ -1,0 +1,38 @@
+# Phase 1 primary sources: verified fresh and carrying full article text in the feed.
+# Evidence and selection criteria: research/SOURCES.md (checked 2026-10-23).
+# Add a source here only after it has been verified the same way.
+
+sources:
+  - id: prothomalo-bn
+    name: Prothom Alo
+    homepage: https://www.prothomalo.com
+    language: bn
+    connector: rss
+    feed_url: https://www.prothomalo.com/feed
+    full_text_in_feed: true
+    notes: Article body is HTML inside the entry's content field.
+
+  - id: bdnews24-bn
+    name: bdnews24 Bangla
+    homepage: https://bangla.bdnews24.com
+    language: bn
+    connector: rss
+    feed_url: https://bangla.bdnews24.com/stories.rss
+    full_text_in_feed: true
+
+  - id: bdnews24-en
+    name: bdnews24.com
+    homepage: https://bdnews24.com
+    language: en
+    connector: rss
+    feed_url: https://bdnews24.com/stories.rss
+    full_text_in_feed: true
+
+  - id: prothomalo-en
+    name: Prothom Alo English
+    homepage: https://en.prothomalo.com
+    language: en
+    connector: rss
+    feed_url: https://en.prothomalo.com/feed
+    full_text_in_feed: true
+    notes: Feed holds only 1-2 items; poll frequently or articles will be missed.
