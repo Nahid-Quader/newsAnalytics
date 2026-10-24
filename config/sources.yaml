@@ -3,7 +3,8 @@
 # Add a source here only after it has been verified the same way.
 #
 # Fields: id (stable slug), name, homepage, language (bn|en), connector (rss), feed_url,
-# poll_minutes, active, full_text_in_feed, section_from_url, notes, terms_notes.
+# poll_minutes, active, full_text_in_feed, section_from_url, notes, terms_notes,
+# backfill (daily_sitemap with {date} placeholder, optional news_sitemap) for collecting past days.
 
 sources:
   - id: prothomalo-bn
@@ -16,6 +17,9 @@ sources:
     full_text_in_feed: true
     section_from_url: true
     notes: Article body is HTML inside the second content entry. Feed holds ~35-45 items.
+    backfill:
+      daily_sitemap: https://www.prothomalo.com/sitemap/sitemap-daily-{date}.xml
+      news_sitemap: https://www.prothomalo.com/news_sitemap.xml
 
   - id: bdnews24-bn
     name: bdnews24 Bangla
@@ -27,6 +31,10 @@ sources:
     full_text_in_feed: true
     section_from_url: true
     notes: Feed holds 50 items.
+    backfill:
+      daily_sitemap: https://bangla.bdnews24.com/sitemap/sitemap-daily-{date}.xml
+      news_sitemap: https://bangla.bdnews24.com/news_sitemap.xml
+      notes: Daily sitemaps are capped at 100 links; the news sitemap adds recent days.
 
   - id: bdnews24-en
     name: bdnews24.com
@@ -38,6 +46,9 @@ sources:
     full_text_in_feed: true
     section_from_url: true
     notes: Feed holds 50 items.
+    backfill:
+      daily_sitemap: https://bdnews24.com/sitemap/sitemap-daily-{date}.xml
+      news_sitemap: https://bdnews24.com/news_sitemap.xml
 
   - id: prothomalo-en
     name: Prothom Alo English
@@ -49,3 +60,6 @@ sources:
     full_text_in_feed: true
     section_from_url: true
     notes: Feed holds only 0-2 items at a time (seen empty on 2026-10-23); polled every 10 minutes.
+    backfill:
+      daily_sitemap: https://en.prothomalo.com/sitemap/sitemap-daily-{date}.xml
+      news_sitemap: https://en.prothomalo.com/news_sitemap.xml

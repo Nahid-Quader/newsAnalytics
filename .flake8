@@ -1,0 +1,4 @@
+[flake8]
+max-line-length = 120
+extend-ignore = E704
+exclude = .venv,node_modules,backend/migrations

@@ -12,6 +12,15 @@ from sqlalchemy.orm import Session
 from app.models import Source
 
 
+class BackfillConfig(BaseModel):
+    """Archive access for collecting past articles: sitemap URLs listing article links, whose pages
+    are then fetched. `{date}` in daily_sitemap is replaced with YYYY-MM-DD (Bangladesh date)."""
+
+    daily_sitemap: str = Field(pattern=r"^https?://.*\{date\}")
+    news_sitemap: HttpUrl | None = None
+    notes: str | None = None
+
+
 class SourceConfig(BaseModel):
     id: str = Field(pattern=r"^[a-z0-9][a-z0-9-]{1,63}$")
     name: str
@@ -24,6 +33,7 @@ class SourceConfig(BaseModel):
     full_text_in_feed: bool = False
     # Derive the section from the first URL path segment (e.g. /sport/abc123 -> "sport").
     section_from_url: bool = False
+    backfill: BackfillConfig | None = None
     notes: str | None = None
     terms_notes: str | None = None
 
@@ -68,7 +78,10 @@ def sync_sources(session: Session, configs: list[SourceConfig]) -> dict[str, int
             full_text_in_feed=cfg.full_text_in_feed,
             notes=cfg.notes,
             terms_notes=cfg.terms_notes,
-            config={"section_from_url": cfg.section_from_url},
+            config={
+                "section_from_url": cfg.section_from_url,
+                "backfill": cfg.backfill.model_dump(mode="json") if cfg.backfill else None,
+            },
         )
         src = existing.get(cfg.id)
         if src is None:

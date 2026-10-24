@@ -54,6 +54,14 @@ class TestBengaliText:
         html = "<p>প্রথম অনুচ্ছেদ।</p><p>দ্বিতীয় &amp; শেষ</p><script>x()</script>"
         assert html_to_text(html) == "প্রথম অনুচ্ছেদ।\n\nদ্বিতীয় & শেষ"
 
+    def test_double_escaped_html_is_fully_stripped(self):
+        # As seen in the real bdnews24 Bangla feed: a caption escaped twice.
+        html = '<p>মূল লেখা।</p>&lt;div class="paragraphs"&gt;&lt;p&gt;ছবি: ইন্ডিয়া টুডে&lt;/p&gt;&lt;/div&gt;'
+        assert html_to_text(html) == "মূল লেখা।\n\nছবি: ইন্ডিয়া টুডে"
+
+    def test_literal_angle_brackets_in_text_survive(self):
+        assert html_to_text("<p>a &lt; b and 3 &gt; 2</p>") == "a < b and 3 > 2"
+
     def test_empty_html_is_none(self):
         assert html_to_text("") is None
         assert html_to_text("<p> </p>") is None

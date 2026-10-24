@@ -38,7 +38,8 @@ class SourceHealth:
 def source_health(session: Session, source: Source, now: datetime | None = None) -> SourceHealth:
     now = now or utcnow()
     runs = list(session.scalars(
-        select(FetchRun).where(FetchRun.source_id == source.id, FetchRun.status != "running")
+        # Health reflects the live feed; backfill runs are reported separately.
+        select(FetchRun).where(FetchRun.source_id == source.id, FetchRun.status != "running", FetchRun.kind == "feed")
         .order_by(FetchRun.started_at.desc(), FetchRun.id.desc())
     ))
     h = SourceHealth(source_id=source.id, name=source.name, active=source.active, status="never_run")

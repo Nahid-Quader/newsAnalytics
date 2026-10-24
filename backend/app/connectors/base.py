@@ -24,6 +24,8 @@ class RawItem:
     author: str | None = None
     categories: list[str] = field(default_factory=list)
     image_url: str | None = None
+    body_source: str = "feed"  # where body_html came from: "feed" | "page"
+    provenance: dict = field(default_factory=dict)  # extra per-item provenance (e.g. extraction method)
 
 
 @dataclass
@@ -35,6 +37,9 @@ class ConnectorResult:
     etag: str | None = None
     last_modified: str | None = None
     warnings: list[str] = field(default_factory=list)
+    collection_method: str | None = None  # defaults to the source's connector name
+    # False for secondary collectors (e.g. backfill) so they don't overwrite the feed's ETag state.
+    update_http_state: bool = True
 
 
 class ConnectorError(Exception):

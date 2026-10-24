@@ -4,6 +4,8 @@
     python -m app.ingest run [--source ID ...]  # one collection run (all active sources by default)
     python -m app.ingest schedule               # keep collecting on each source's poll interval
     python -m app.ingest health                 # print per-source health
+    python -m app.ingest backfill --days 3 [--source ID] [--dry-run] [--max-pages N]
+                                                # collect past days via sitemaps + article pages
 """
 
 from __future__ import annotations
@@ -21,6 +23,7 @@ from app.core.http import PoliteHttpClient
 from app.core.logging import configure_logging
 from app.db import get_session_factory
 from app.health import all_source_health
+from app.ingest.backfill import run_backfill
 from app.ingest.pipeline import run_all
 from app.ingest.scheduler import build_scheduler
 from app.sources import load_sources, sync_sources
@@ -34,7 +37,14 @@ def main(argv: list[str] | None = None) -> int:
     run_p.add_argument("--source", action="append", dest="sources", help="source id (repeatable)")
     sub.add_parser("schedule")
     sub.add_parser("health")
+    bf = sub.add_parser("backfill", help="collect past days via sitemaps and article pages")
+    bf.add_argument("--days", type=int, default=3, help="number of Bangladesh calendar days incl. today (1-120)")
+    bf.add_argument("--source", action="append", dest="sources", help="source id (repeatable)")
+    bf.add_argument("--max-pages", type=int, default=None, help="cap article pages per source and day")
+    bf.add_argument("--dry-run", action="store_true", help="only read sitemaps and report what would be fetched")
     args = parser.parse_args(argv)
+    if args.command == "backfill" and not 1 <= args.days <= 120:
+        parser.error("--days must be between 1 and 120")
 
     settings = get_settings()
     configure_logging(settings.log_level, settings.log_json)
@@ -59,6 +69,11 @@ def main(argv: list[str] | None = None) -> int:
             results = run_all(session_factory, connectors, args.sources)
             print(json.dumps([asdict(r) for r in results], ensure_ascii=False, indent=2, default=str))
             return 1 if any(r.status == "failed" for r in results) else 0
+        if args.command == "backfill":
+            results = run_backfill(session_factory, http, args.days, args.sources,
+                                   max_pages=args.max_pages, dry_run=args.dry_run)
+            print(json.dumps(results, ensure_ascii=False, indent=2, default=str))
+            return 1 if any(r.get("status") == "failed" or r.get("error") for r in results) else 0
         if args.command == "schedule":
             is_sqlite = make_url(settings.database_url).get_backend_name() == "sqlite"
             scheduler = build_scheduler(session_factory, connectors, workers=1 if is_sqlite else 4)

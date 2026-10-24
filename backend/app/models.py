@@ -102,6 +102,8 @@ class FetchRun(Base):
 
     id: Mapped[int] = mapped_column(Integer, primary_key=True, autoincrement=True)
     source_id: Mapped[str] = mapped_column(ForeignKey("sources.id"))
+    kind: Mapped[str] = mapped_column(String(16), default="feed", server_default="feed")  # feed | backfill
+    target_date: Mapped[str | None] = mapped_column(String(10))  # backfill: publication day (YYYY-MM-DD)
     started_at: Mapped[datetime] = mapped_column(UTCDateTime, default=utcnow)
     finished_at: Mapped[datetime | None] = mapped_column(UTCDateTime)
     status: Mapped[str] = mapped_column(String(16), default="running")  # running|success|not_modified|failed

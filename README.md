@@ -1,7 +1,7 @@
 ﻿# newsAnalytics: Bangladesh News Intelligence Platform
 
 Collects news from Bangladeshi publishers and (in later phases) analyses how coverage and narratives
-differ across outlets. **Current state: Phase 1 backbone.** Ingestion, storage, deduplication, source
+differ across outlets. **Current state: Phase 1 backbone; project paused (see PLAN.md).** Ingestion, storage, deduplication, source
 health, API and a browsing UI, running on 4 verified sources.
 
 - Plan, status and decisions: [PLAN.md](PLAN.md)
@@ -28,7 +28,7 @@ backend/            Python package `app` (FastAPI, SQLAlchemy, Alembic, pytest)
   app/ingest/       normalisation, pipeline, scheduler, CLI
   app/api/          REST API
   migrations/       Alembic migrations
-  tests/            73 tests; fixtures/ holds real feed snapshots for offline tests
+  tests/            88 tests; fixtures/ holds real feed snapshots for offline tests
 frontend/           React + TypeScript (Vite)
 config/sources.yaml source configuration
 research/           source discovery scripts and findings
@@ -52,6 +52,8 @@ cd backend
 ..\.venv\Scripts\python.exe -m app.ingest run       # one run over all sources
 ..\.venv\Scripts\python.exe -m app.ingest schedule  # or: keep collecting on each source's interval
 ..\.venv\Scripts\python.exe -m app.ingest health    # per-source health as JSON
+..\.venv\Scripts\python.exe -m app.ingest backfill --days 3 --dry-run  # past days: list what would be fetched
+..\.venv\Scripts\python.exe -m app.ingest backfill --days 3            # fetch them (sitemaps + article pages)
 
 # 3. API (http://localhost:8000/docs)
 ..\.venv\Scripts\python.exe -m uvicorn app.api.main:app --reload --port 8000
@@ -112,7 +114,9 @@ health states, API pagination, filters and search, migrations and the scheduler.
 
 - Only 4 sources (3 that deliver steadily). Prothom Alo English often has an empty feed, and it shows as
   `warning` in source health.
-- Feeds only expose recent items, so there's no history before collection started.
+- Feeds only expose recent items. Past days come from the `backfill` command (daily sitemaps +
+  article pages); it's built and tested but hasn't been run live yet. bdnews24 Bangla's daily
+  sitemaps are capped at 100 links, so some of its articles may be missed.
 - A few items are videos with only a summary (`ingestion_status = partial`).
 - Section comes from the URL path (e.g. `/sport/…`). It's the publisher's own structure, not a classification.
 - SQLite allows one writer: run one scheduler process at a time. Use PostgreSQL for anything bigger.

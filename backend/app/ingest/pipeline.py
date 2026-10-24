@@ -90,7 +90,7 @@ def normalise_item(item: RawItem, source: Source, now: datetime) -> dict:
         "title": title,
         "summary": summary,
         "body": body,
-        "body_source": "feed" if body else None,
+        "body_source": item.body_source if body else None,
         "language": source.language,
         "section": section,
         "section_source": section_source,
@@ -123,9 +123,9 @@ def _find_existing(session: Session, source_id: str, values: dict) -> Article | 
     return found
 
 
-def _persist(session: Session, source: Source, run: FetchRun, prepared: list[dict], stats: RunStats,
-             now: datetime) -> None:
-    for values in prepared:
+def _persist(session: Session, source: Source, run: FetchRun, prepared: list[tuple[dict, dict]], stats: RunStats,
+             now: datetime, collection_method: str) -> None:
+    for values, item_provenance in prepared:
         existing = _find_existing(session, source.id, values)
         if existing is not None:
             existing.last_seen_at = now
@@ -149,17 +149,18 @@ def _persist(session: Session, source: Source, run: FetchRun, prepared: list[dic
         )
         article = Article(
             source_id=source.id,
-            collection_method=source.connector,
+            collection_method=collection_method,
             first_seen_at=now,
             last_seen_at=now,
             last_updated_at=now,
             first_fetch_run_id=run.id,
             provenance={
-                "collected_via": source.connector,
+                "collected_via": collection_method,
                 "endpoint": source.endpoint,
                 "fetch_run_id": run.id,
                 "fetched_at": now.isoformat(),
                 "attribution": f"{source.name} ({source.homepage})",
+                **item_provenance,
             },
             **values,
         )
@@ -189,14 +190,15 @@ def _finish_run(run: FetchRun, stats: RunStats, started: float) -> None:
     run.duration_ms = stats.duration_ms
 
 
-def run_source(session_factory: sessionmaker[Session], source_id: str, connector: Connector) -> RunStats:
+def run_source(session_factory: sessionmaker[Session], source_id: str, connector: Connector,
+               kind: str = "feed", target_date: str | None = None) -> RunStats:
     started = time.monotonic()
     stats = RunStats(source_id=source_id)
     with session_factory() as session:
         source = session.get(Source, source_id)
         if source is None:
             raise KeyError(f"unknown source: {source_id}")
-        run = FetchRun(source_id=source_id, started_at=utcnow())
+        run = FetchRun(source_id=source_id, started_at=utcnow(), kind=kind, target_date=target_date)
         session.add(run)
         session.commit()
         stats.run_id = run.id
@@ -218,7 +220,7 @@ def run_source(session_factory: sessionmaker[Session], source_id: str, connector
             else:
                 now = utcnow()
                 stats.items_seen = len(result.items)
-                prepared: dict[str, dict] = {}
+                prepared: dict[str, tuple[dict, dict]] = {}
                 for item in result.items:
                     try:
                         values = normalise_item(item, source, now)
@@ -229,13 +231,15 @@ def run_source(session_factory: sessionmaker[Session], source_id: str, connector
                     if values["url_hash"] in prepared:
                         stats.add_warning(f"same URL twice in feed: {values['url']}")
                         continue
-                    prepared[values["url_hash"]] = values
+                    prepared[values["url_hash"]] = (values, item.provenance)
                 if not result.items:
-                    stats.add_warning("feed returned no items")
+                    stats.add_warning("feed returned no items" if kind == "feed" else "no new items")
                 try:
-                    _persist(session, source, run, list(prepared.values()), stats, now)
-                    source.http_etag = result.etag
-                    source.http_last_modified = result.last_modified
+                    _persist(session, source, run, list(prepared.values()), stats, now,
+                             result.collection_method or source.connector)
+                    if result.update_http_state:
+                        source.http_etag = result.etag
+                        source.http_last_modified = result.last_modified
                     stats.status = "success"
                 except Exception as exc:
                     session.rollback()

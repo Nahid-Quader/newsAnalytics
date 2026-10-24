@@ -60,14 +60,25 @@ class _TextExtractor(HTMLParser):
             self.parts.append(data.replace("\n", " "))
 
 
+_LEFTOVER_TAG = re.compile(r"</?(p|div|br|span|figure|figcaption|img|a|strong|em|b|i)\b[^>]*>", re.I)
+
+
 def html_to_text(value: str | None) -> str | None:
-    """Convert an HTML fragment to plain text, keeping paragraph breaks as blank lines."""
+    """Convert an HTML fragment to plain text, keeping paragraph breaks as blank lines.
+
+    Some feeds double-escape embedded HTML (bdnews24 captions arrive as "&lt;p&gt;"), so
+    the conversion is repeated while real tags are still left in the text.
+    """
     if not value:
         return None
-    parser = _TextExtractor()
-    parser.feed(value)
-    parser.close()
-    text = clean_text("".join(parser.parts))
+    text: str | None = value
+    for _ in range(3):
+        parser = _TextExtractor()
+        parser.feed(text)
+        parser.close()
+        text = clean_text("".join(parser.parts))
+        if text is None or not _LEFTOVER_TAG.search(text):
+            break
     if text is None:
         return None
     return re.sub(r"\n\s*\n", "\n\n", text)

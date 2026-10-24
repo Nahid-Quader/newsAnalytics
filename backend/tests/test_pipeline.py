@@ -78,7 +78,8 @@ def test_changed_content_updates_existing_article(session_factory, web, make_con
     with session_factory() as s:
         art = s.scalar(select(Article).where(Article.source_id == PA))
     assert art.body == "সংশোধিত সংস্করণ" and art.version == 2
-    assert art.last_updated_at > art.first_seen_at
+    # >= because Windows' clock can return the same value for two runs a few ms apart.
+    assert art.last_updated_at >= art.first_seen_at
     assert len(art.provenance["updates"]) == 1
 
 
