@@ -1,6 +1,9 @@
 # Phase 1 primary sources: verified fresh and carrying full article text in the feed.
 # Evidence and selection criteria: research/SOURCES.md (checked 2026-10-23).
 # Add a source here only after it has been verified the same way.
+#
+# Fields: id (stable slug), name, homepage, language (bn|en), connector (rss), feed_url,
+# poll_minutes, active, full_text_in_feed, section_from_url, notes, terms_notes.
 
 sources:
   - id: prothomalo-bn
@@ -9,8 +12,10 @@ sources:
     language: bn
     connector: rss
     feed_url: https://www.prothomalo.com/feed
+    poll_minutes: 30
     full_text_in_feed: true
-    notes: Article body is HTML inside the entry's content field.
+    section_from_url: true
+    notes: Article body is HTML inside the second content entry. Feed holds ~35-45 items.
 
   - id: bdnews24-bn
     name: bdnews24 Bangla
@@ -18,7 +23,10 @@ sources:
     language: bn
     connector: rss
     feed_url: https://bangla.bdnews24.com/stories.rss
+    poll_minutes: 30
     full_text_in_feed: true
+    section_from_url: true
+    notes: Feed holds 50 items.
 
   - id: bdnews24-en
     name: bdnews24.com
@@ -26,7 +34,10 @@ sources:
     language: en
     connector: rss
     feed_url: https://bdnews24.com/stories.rss
+    poll_minutes: 30
     full_text_in_feed: true
+    section_from_url: true
+    notes: Feed holds 50 items.
 
   - id: prothomalo-en
     name: Prothom Alo English
@@ -34,5 +45,7 @@ sources:
     language: en
     connector: rss
     feed_url: https://en.prothomalo.com/feed
+    poll_minutes: 10
     full_text_in_feed: true
-    notes: Feed holds only 1-2 items; poll frequently or articles will be missed.
+    section_from_url: true
+    notes: Feed holds only 0-2 items at a time (seen empty on 2026-10-23); polled every 10 minutes.

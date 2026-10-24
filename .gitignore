@@ -1,7 +1,14 @@
-﻿.venv/
+.venv/
 __pycache__/
 *.pyc
 .env
 .pytest_cache/
 node_modules/
 research/raw/
+data/
+frontend/dist/
+*.db
+*.db-wal
+*.db-shm
+*.egg-info/
+*.tsbuildinfo

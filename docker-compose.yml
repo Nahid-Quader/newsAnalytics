@@ -1,0 +1,36 @@
+# Local development with PostgreSQL. Not yet tested (no Docker on the machine where this was written).
+#   docker compose up --build
+# API: http://localhost:8000/docs  ·  Frontend: run `npm run dev` in frontend/ (proxies /api to :8000)
+
+services:
+  db:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_USER: news
+      POSTGRES_PASSWORD: news   # local development only
+      POSTGRES_DB: news
+    ports: ["5432:5432"]
+    volumes: [pgdata:/var/lib/postgresql/data]
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U news"]
+      interval: 5s
+      retries: 10
+
+  api:
+    build: { context: ., dockerfile: backend/Dockerfile }
+    environment: &backend_env
+      DATABASE_URL: postgresql+psycopg://news:news@db:5432/news
+      SOURCES_FILE: /app/config/sources.yaml
+    command: sh -c "alembic upgrade head && python -m app.ingest sync-sources && uvicorn app.api.main:app --host 0.0.0.0 --port 8000"
+    ports: ["8000:8000"]
+    depends_on: { db: { condition: service_healthy } }
+
+  worker:
+    build: { context: ., dockerfile: backend/Dockerfile }
+    environment: *backend_env
+    command: sh -c "alembic upgrade head && python -m app.ingest sync-sources && python -m app.ingest schedule"
+    depends_on: { db: { condition: service_healthy } }
+    restart: unless-stopped
+
+volumes:
+  pgdata:
